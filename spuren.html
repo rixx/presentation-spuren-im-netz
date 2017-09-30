@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Spuren im Netz</title>
+
+		<meta name="description" content="Spuren im Netz – Privacy!">
+		<meta name="author" content="Tobias 'rixx' Kunze">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+					<h1>Spuren im Netz</h1>
+					<h3>… und wie du sie vermeidest</h3>
+					<img data-src="/fingerprint.png">
+					<br>
+					<p>
+						<small>Ich: <a href="https://cutebit.de">rixx</a> / <a href="https://chaos.social/@rixx">@rixx@chaos.social</a></small>
+					</p>
+				</section>
+
+				<section>
+					<p>
+					rixx:<br>benutzt das Internet.<br>hat Meinungen dazu.
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Wie hinterlasse ich Spuren?</h2>
+						<img data-src="/fingerprint.png">
+						<ul>
+						<li class="fragment"> Passive Aufzeichnung</li>
+						<li class="fragment"> Aktives Profiling</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Log-Dateien: direkt</h3>
+						<img data-src="/log.png">
+						<ul>
+						<li class="fragment">Unvermeidbar</li>
+						<li class="fragment">Datenschutzrichtlinien helfen</li>
+						<ul>
+						<small class="fragment">(Bitte beachten)</small>
+					</section>
+					<section>
+						<h3>Log-Dateien: woanders</h3>
+						<img data-src="/log.png">
+						<ul>
+						<li class="fragment">Tracking-Pixel</li>
+						<li class="fragment">Andere Ressourcen</li>
+						<li class="fragment">Werbung</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Aktives Profiling: Cookies</h3>
+						<img data-src="/cookie.png">
+						<ul>
+						<li class="fragment">Überall in Nutzung</li>
+						<li class="fragment">Browser independent Cookies</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Aktives Profiling: JS</h3>
+						<ul>
+						<li class="fragment">Auslesen von Browser-Schnittstellen</li>
+						<li class="fragment">Fingerprinting</li>
+						</ul>
+					</section>
+				</section>
+				<section class="black">
+				</section>
+
+				<section>
+					<section>
+						<h2>Vermeidung</h2>
+						<ul>
+						<li>Browsereinstellungen</li>
+						<img data-src="/settings.png">
+						</ul>
+					</section>
+					<section>
+						<h2>Vermeidung</h2>
+						<ul>
+						<li>Browsereinstellungen</li>
+						<li>Ad-Blocker</li>
+						<li class="fragment">Skriptblocker</li>
+						<li class="fragment">Useragent spoofen</li>
+						</ul>
+					</section>
+				    <section>
+				      <h2>Yay? Nay?</h2>
+				      <p class="fragment">Bewusstsein haben und schaffen</p>
+				      <p class="fragment">Abwägung: Nutzen vs Frust</p>
+				    </section>
+				    <section>
+				      <h2>Linksammlung</h2>
+					  <ul>
+						  <li>https://panopticlick.eff.org/</li>
+						  <li>https://digitalcourage.de/digitale-selbstverteidigung</li>
+					  </ul>
+				    </section>
+				</section>
+
+				<section style="text-align: left;">
+					<h1>The End</h1>
+					<img data-src="/fingerprint.png">
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
